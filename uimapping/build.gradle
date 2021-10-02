@@ -1,0 +1,20 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven' // GitHub Maven 插件
+apply from: '../config.gradle'
+
+group = 'com.github.pengxurui' // github 的用户名
+
+project.ext.configLibModule project
+
+dependencies {
+    implementation SDK.ktx_jdk7
+    implementation SDK.core_ktx
+    implementation SDK.ktx_coroutines
+    implementation SDK.appcompat
+    implementation SDK.activityx
+    implementation SDK.activityx_ktx
+    implementation SDK.fragmentx
+    implementation SDK.fragmentx_ktx
+    implementation SDK.recyclerview
+    implementation SDK.lifecycle_extensions
+}
